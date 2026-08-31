@@ -1,0 +1,8 @@
+@"
+__pycache__/
+*.pyc
+outputs/
+golden_out/
+verify_out/
+*.csv
+"@ | Out-File -Encoding utf8 .gitignore
