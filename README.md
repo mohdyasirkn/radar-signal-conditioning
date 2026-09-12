@@ -90,8 +90,4 @@ Config lives in the `CONFIG` dict (`nuscenes_to_raw_adc.py`) / `CFG` dict (`nusc
 
 ---
 
-## Notes / Gotchas
 
-- All range bins (0 to N−1) are valid — the data is complex I/Q, not a real-valued signal, so there's no Nyquist mirroring to discard.
-- Per-frame AGC normalization (peak → 70% of full scale) is applied before quantizing, to avoid clipping.
-- `--dataroot`/`--out`/`--adc_dir` default to a local Windows path in the scripts — pass your own paths explicitly on other machines.
